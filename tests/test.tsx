@@ -112,6 +112,7 @@ const LastUpdatesFallback = () => {
 					<CardHeader>
 						<Skeleton className="h-5 w-2/3" />
 					</CardHeader>
+
 					<CardContent>
 						<Skeleton className="h-4 w-full mb-2" />
 						<Skeleton className="h-4 w-5/6" />
