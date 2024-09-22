@@ -14,13 +14,7 @@
 #
 pre-commit:
   commands:
-    biome-check:
+    check:
       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
-      run: |
-        echo "Running Biome checks..."
-        if ! bun biome ci .; then
-          # Exibir uma notificação se o comando falhar
-          notify-send "Biome Formatting Error" "Biome detected formatting issues! Please fix them before committing."
-          exit 1
-        fi
-      verbose: true
+      run: bun biome format . --write
+      stage_fixed: true

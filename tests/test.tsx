@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useClient } from "@/hook/useClient";
 import { useTheme } from "next-themes";
@@ -8,8 +8,8 @@ import {
 	CardContent,
 	CardHeader,
 	CardTitle,
-} from "../components/ui/card"
-import { Skeleton } from "../components/ui/skeleton"
+} from "../components/ui/card";
+import { Skeleton } from "../components/ui/skeleton";
 
 export interface CardData {
 	id: number;
@@ -49,121 +49,16 @@ const cardsData = [
 		description: "Craft non-intrusive, informative user notifications.",
 		imgsrc: "/cards/card-image-4.svg",
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		imgDarkSrc: "/cards/card-image-4-dark.svg",
 	},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
 ];
 
 export const LastUpdates = () => {
 	return (
 		<section className="pt-10 sm:pt-16 md:pt-20 w-full max-w-[1240px]">
-			<h2 className="text-foreground text-xl sm:text-2xl font-semibold mb-4 sm:mb-6"
-			>
+			<h2 className="text-foreground text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
 				Last Updates
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				
 			</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 			<CardGrid />
 		</section>
@@ -176,88 +71,16 @@ const CardGrid = () => {
 
 	if (!isClient) {
 		return <LastUpdatesFallback />;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
 
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12"
-		
-		
-		
-		
-		>
+		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
 			{cardsData.map(({ id, imgDarkSrc, imgsrc, title, description }) => (
 				<Card key={id}>
 					<div className="relative w-full h-[125px] border-b">
 						<Image
 							src={resolvedTheme === "dark" ? imgDarkSrc : imgsrc}
 							alt={`Image for ${title}`}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 							fill
 							className="object-contain p-6 pb-3"
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
