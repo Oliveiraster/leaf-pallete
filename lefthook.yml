@@ -12,9 +12,9 @@
 #       tags: backend security
 #       run: bundle audit
 #
-# pre-commit:
-#   commands:
-#     check:
-#       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
-#       run: biome ci .
-#       stage_fixed: true
+pre-commit:
+  commands:
+    check:
+      glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
+      run: bun biome ci .
+      stage_fixed: true

@@ -29,9 +29,6 @@ jobs:
         uses: biomejs/setup-biome@v2
         with:
           version: latest
-
-      - name: Format code
-        run: biome format . --write
         
       - name: Lint code
         run: biome ci .

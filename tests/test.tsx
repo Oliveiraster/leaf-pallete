@@ -20,12 +20,6 @@ export interface CardData {
 }
 
 const cardsData = [
-
-
-
-
-
-
 	{
 		id: 1,
 		title: "Button 101",
@@ -36,24 +30,10 @@ const cardsData = [
 		imgDarkSrc: "/cards/card-image-1-dark.svg",
 	},
 	{
-
-
-
-
-
-
-
-
 		id: 2,
-
-
-
 
 		title: "Better Inputs",
 		description: "Design user-friendly forms with best practices about inputs.",
-
-
-
 
 		imgsrc: "/cards/card-image-2.svg",
 		imgDarkSrc: "/cards/card-image-2-dark.svg",
@@ -62,20 +42,11 @@ const cardsData = [
 		id: 3,
 		title: "Smart Accordions",
 
-
-
-
-
 		description: "Build expandable sections for better content organization.",
 		imgsrc: "/cards/card-image-3.svg",
 		imgDarkSrc: "/cards/card-image-3-dark.svg",
 	},
 	{
-
-
-
-
-
 		id: 4,
 		title: "Effective Toasts",
 		description: "Craft non-intrusive, informative user notifications.",
@@ -105,157 +76,6 @@ const CardGrid = () => {
 		return <LastUpdatesFallback />;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	return (
 		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
 			{cardsData.map(({ id, imgDarkSrc, imgsrc, title, description }) => (
@@ -280,41 +100,6 @@ const CardGrid = () => {
 				</Card>
 			))}
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	);
 };
 
