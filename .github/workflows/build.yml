@@ -31,4 +31,4 @@ jobs:
           version: latest
 
       - name: Lint code
-        run: bun biome format . --write
+        run: biome format . --write
