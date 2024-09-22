@@ -31,7 +31,7 @@ jobs:
           version: latest
 
       - name: Format code
-        run: biome format .
+        run: biome format . --write
         
       - name: Lint code
         run: biome ci .
