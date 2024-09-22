@@ -18,5 +18,5 @@ pre-commit:
       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
       run: |
         echo "Running biome checks..."
-        bun biome ci . --fix || true
+        bun biome ci .
       stage_fixed: true
