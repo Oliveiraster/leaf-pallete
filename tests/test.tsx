@@ -99,6 +99,46 @@ export const LastUpdates = () => {
 			<h2 className="text-foreground text-xl sm:text-2xl font-semibold mb-4 sm:mb-6"
 			>
 				Last Updates
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
 			</h2>
 
 
