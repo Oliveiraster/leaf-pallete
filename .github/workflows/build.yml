@@ -30,11 +30,11 @@ jobs:
         with:
           version: latest
 
-      - name: Check for changes A
-        run: git diff --exit-code
-
-      - name: Lint code
-        run: biome format . --write
+      - name: Format code
+        run: biome format .
         
-      - name: Check for changes B
+      - name: Lint code
+        run: biome ci .
+
+      - name: Check for changes 
         run: git diff --exit-code
