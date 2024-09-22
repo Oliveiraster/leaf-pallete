@@ -16,7 +16,7 @@ pre-commit:
   commands:
     check:
       glob: '*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}'
-      run: |
+      run:
         echo "Running biome checks..."
         bun biome ci .
       stage_fixed: true

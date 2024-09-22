@@ -96,9 +96,35 @@ const cardsData = [
 export const LastUpdates = () => {
 	return (
 		<section className="pt-10 sm:pt-16 md:pt-20 w-full max-w-[1240px]">
-			<h2 className="text-foreground text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
+			<h2 className="text-foreground text-xl sm:text-2xl font-semibold mb-4 sm:mb-6"
+			>
 				Last Updates
 			</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			<CardGrid />
 		</section>
 	);
@@ -136,7 +162,7 @@ const CardGrid = () => {
 
 
 
-		
+
 
 
 
