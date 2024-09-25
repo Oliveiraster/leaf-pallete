@@ -74,7 +74,28 @@ const CardGrid = () => {
 		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
 			{cardsData.map(({ id, imgDarkSrc, imgsrc, title, description }) => (
 				<Card key={id}>
-					<div className="relative w-full h-[125px] border-b">
+					<div
+						className="relative
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+						w-full h-[125px] border-b"
+					>
 						<Image
 							src={resolvedTheme === "dark" ? imgDarkSrc : imgsrc}
 							alt={`Image for ${title}`}

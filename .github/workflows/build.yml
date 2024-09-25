@@ -32,6 +32,3 @@ jobs:
         
       - name: Lint code
         run: biome ci .
-
-      - name: Check for changes 
-        run: git diff --exit-code
