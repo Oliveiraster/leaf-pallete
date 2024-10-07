@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -58,16 +57,22 @@
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+
+  img {
+    width: auto;
+    height: auto;
+}
 }
 
 @layer base {
   * {
     @apply border-border;
+    [data-theme='dark'] [data-hide-on-theme='dark'],
+    [data-theme='light'] [data-hide-on-theme='light'] {
+      display: none;
+    }
   }
   body {
     @apply bg-background text-foreground lining-nums overflow-x-hidden;
   }
 }
-
-
-
